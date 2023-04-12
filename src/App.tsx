@@ -9,7 +9,7 @@ type LoginValues = {
 
 function App() {
   return (
-    <main>
+    <main className="h-screen">
       <Login />
     </main>
   );
