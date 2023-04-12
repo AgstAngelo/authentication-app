@@ -24,3 +24,6 @@ authentication-app-master
 *.sln
 *.sw?
 
+package-lock.json
+vite.config.ts
+

@@ -33,21 +33,23 @@ export const Login = () => {
   };
 
   return (
-    <section>
-      {user ? (
-        <Fragment>
-          <h3>Bem Vindo!</h3>
-          <button onClick={() => signOut()}>Sair</button>
-        </Fragment>
-      ) : (
-        <form onSubmit={handleSubmit(formHandler)}>
-          <label htmlFor='email'>Email</label>
-          <input type='text' {...register("email")} />
-          <label htmlFor='password'>Senha</label>
-          <input type='password' {...register("password")} />
-          <input type='submit' value='Entrar' />
-        </form>
-      )}
+    <section className="">
+      <img src='../src/assets/devchallenges.svg' alt='devchallenges_logo' />
+      <h3>Join thousands of learners from around the world</h3>
+      <p>Master web development by making real-life projects. There are multiple paths for you to choose</p>
+      <form onSubmit={handleSubmit(formHandler)}>
+        <input type='text' {...register("email")} placeholder='email' />
+        <input type='password' {...register("password")} placeholder='password' />
+        <input type='submit' value='Start coding now' />
+        <span>or continue with these social profile</span>
+        <div>
+          <embed src='../src/assets/Google.svg' type='' />
+          <embed src='../src/assets/Facebook.svg' type='' />
+          <embed src='../src/assets/Twitter.svg' type='' />
+          <embed src='../src/assets/Github.svg' type='' />
+        </div>
+        <p>Already a member? Login</p>
+      </form>
     </section>
   );
 };
