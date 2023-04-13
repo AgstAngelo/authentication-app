@@ -19,7 +19,7 @@ export const Register = () => {
   };
 
   return (
-    <section className="bg-black">
+    <section className="">
       <form onSubmit={handleSubmit(formHandler)}>
         <label htmlFor='name'>Nome</label>
         <input type='text' {...register("name")} />

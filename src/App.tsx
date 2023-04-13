@@ -1,16 +1,9 @@
-import { useForm } from "react-hook-form";
-import { IUser } from "./interfaces";
-import { Login } from "./pages/Login";
-
-type LoginValues = {
-  email: string;
-  password: string;
-};
+import { PageRouter } from "./Routes";
 
 function App() {
   return (
     <main className="h-screen">
-      <Login />
+      <PageRouter/>
     </main>
   );
 }
