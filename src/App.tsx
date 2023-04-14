@@ -1,10 +1,17 @@
+import { Fragment } from "react";
 import { PageRouter } from "./Routes";
+import { Footer } from "./Components/Footer";
+import { Header } from "./Components/Header";
 
 function App() {
   return (
-    <main className="h-screen">
-      <PageRouter/>
-    </main>
+    <Fragment>
+      <Header/>
+      <main className="">
+        <PageRouter/>
+      </main>
+      <Footer/>
+    </Fragment>
   );
 }
 

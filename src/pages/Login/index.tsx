@@ -30,6 +30,7 @@ export const Login = () => {
     if (data.email === mock.email) {
       const user: IUser = mock;
       reset();
+      const teste = "teste";
       navigate("/profile", { state: user });
     }
   };
@@ -67,12 +68,11 @@ export const Login = () => {
             {hasLogin ? "Don't have an account yet? " : "Already a member? "}
           {
             hasLogin
-            ? <Link to={'/register'}>Register</Link>
-            : <Link to={'/'} onClick={() => setHasLogin(!hasLogin)}>Login</Link>
+            ? <Link className="decoration-blue-500" to={'/register'}>Register</Link>
+            : <Link className="text-sky-500" to={'/'} onClick={() => setHasLogin(!hasLogin)}>Login</Link>
           }
           </p>
       </div>
-
     </section>
   );
 };
